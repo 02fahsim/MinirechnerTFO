@@ -15,8 +15,18 @@ namespace Minirechner
             Console.Write("Zweite Zahl: ");
             int ZweiteZahl = Convert.ToInt32(Console.ReadLine());
 
+            int Summe = Addiere(ErsteZahl, ZweiteZahl);
+
+            Console.WriteLine("\nSumme = " + Summe);
             Console.ReadKey();
                 
         }
+
+        static int Addiere(int Zahl1, int Zahl2)
+        {
+            int Ergebnis = Zahl1 + Zahl2;
+            return Ergebnis;
+        }
+
     }
 }
