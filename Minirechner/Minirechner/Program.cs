@@ -16,8 +16,10 @@ namespace Minirechner
             int ZweiteZahl = Convert.ToInt32(Console.ReadLine());
 
             int Summe = Addiere(ErsteZahl, ZweiteZahl);
+            int Differenz = Subtrahiere(ErsteZahl, ZweiteZahl);
 
             Console.WriteLine("\nSumme = " + Summe);
+            Console.WriteLine("Differenz = " + Differenz);
             Console.ReadKey();
                 
         }
@@ -25,6 +27,12 @@ namespace Minirechner
         static int Addiere(int Zahl1, int Zahl2)
         {
             int Ergebnis = Zahl1 + Zahl2;
+            return Ergebnis;
+        }
+
+        static int Subtrahiere(int Zahl1, int Zahl2)
+        {
+            int Ergebnis = Zahl1 - Zahl2;
             return Ergebnis;
         }
 
