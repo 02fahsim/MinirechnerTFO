@@ -1,0 +1,2 @@
+# MinirechnerTFO
+Simon Fahrner Übung
