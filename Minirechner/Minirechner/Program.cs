@@ -18,10 +18,12 @@ namespace Minirechner
             int Summe = Addiere(ErsteZahl, ZweiteZahl);
             int Differenz = Subtrahiere(ErsteZahl, ZweiteZahl);
             int Produkt = Multipliziere(ErsteZahl, ZweiteZahl);
+            int Quotient = Dividiere(ErsteZahl, ZweiteZahl);
 
             Console.WriteLine("\nSumme = " + Summe);
             Console.WriteLine("Differenz = " + Differenz);
             Console.WriteLine("Produkt = " + Produkt);
+            Console.WriteLine("Quotient = " + Quotient);
             Console.ReadKey();
                 
         }
@@ -42,6 +44,12 @@ namespace Minirechner
         {
             int Ergebnis = Zahl1 * Zahl2;
             return Ergebnis;
+        }
+
+        static int Dividiere(int Zahl1, int Zahl2)
+        { 
+             int Ergbnis = Zahl1 / Zahl2;
+             return Ergbnis;
         }
 
 
